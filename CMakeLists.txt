@@ -58,7 +58,7 @@ if(BUILD_TESTS)
   enable_testing()
   file(GLOB ${PROJECT_NAME}_TEST_SOURCES tests/*.cpp)
   add_executable(check ${${PROJECT_NAME}_TEST_SOURCES})
-  target_link_libraries(check ${PROJECT_NAME} GTest::gtest_main)
+  target_link_libraries(check ${PROJECT_NAME} GTest::main)
   add_test(NAME check COMMAND check)
 endif()
 
